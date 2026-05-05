@@ -36,7 +36,7 @@ dependencies:
   
   # Media & Recording
   image_picker: ^1.1.2
-  record: ^6.2.0
+  record: 6.2.0
   audioplayers: ^6.1.0
   file_picker: ^8.1.4
 
@@ -78,3 +78,5 @@ flutter:
     - assets/sounds/
     - assets/animations/
 # Force CI Update
+dependency_overrides:
+  record_android: 1.3.0
