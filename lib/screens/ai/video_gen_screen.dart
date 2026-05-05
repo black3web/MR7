@@ -1,3 +1,4 @@
+import "../../services/ai_service.dart";
 import 'dart:async';
 import '../../config/constants.dart';
 import 'package:flutter/material.dart';
