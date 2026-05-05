@@ -63,14 +63,14 @@ class _TypingIndicatorState extends State<TypingIndicator>
         children: [
           CircleAvatar(
             radius: 16,
-            backgroundColor: AppColors.surface.withOpacity(0.3),
+            backgroundColor: AppColors.primary.withOpacity(0.3),
             child: const Icon(Icons.more_horiz, size: 16),
           ),
           const SizedBox(width: 8),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             decoration: BoxDecoration(
-              color: AppColors.surface.withOpacity(0.2),
+              color: AppColors.primary.withOpacity(0.2),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(20),
                 topRight: Radius.circular(20),
@@ -191,7 +191,7 @@ class OnlineIndicator extends StatelessWidget {
         shape: BoxShape.circle,
         border: showBorder
             ? Border.all(
-                color: AppColors.background,
+                color: AppColors.primary,
                 width: 2,
               )
             : null,
@@ -435,7 +435,7 @@ class _RecordingIndicatorState extends State<RecordingIndicator>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: AppColors.surface.withOpacity(0.9),
+        color: AppColors.primary.withOpacity(0.9),
         borderRadius: BorderRadius.circular(24),
       ),
       child: Row(

@@ -90,7 +90,7 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: AppColors.primary,
         border: Border(
           bottom: BorderSide(color: Colors.white.withOpacity(0.1)),
         ),
@@ -144,7 +144,7 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
   Widget _buildRecordingUI() {
     return Container(
       padding: const EdgeInsets.all(16),
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: RecordingIndicator(
         seconds: _recordingSeconds,
         onStop: _stopRecording,
@@ -157,7 +157,7 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: AppColors.primary,
         border: Border(
           top: BorderSide(color: Colors.white.withOpacity(0.1)),
         ),
@@ -175,7 +175,7 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: AppColors.background,
+                color: AppColors.primary,
                 borderRadius: BorderRadius.circular(24),
               ),
               child: Row(
@@ -246,12 +246,12 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
           _textController.text += emoji.emoji;
         },
         config: Config(
-          bgColor: AppColors.background,
+          bgColor: AppColors.primary,
           indicatorColor: AppColors.accent,
           iconColor: AppColors.textSecondary,
           iconColorSelected: AppColors.accent,
           backspaceColor: AppColors.accent,
-          skinToneDialogBgColor: AppColors.surface,
+          skinToneDialogBgColor: AppColors.primary,
           skinToneIndicatorColor: AppColors.accent,
           categoryIcons: const CategoryIcons(),
           buttonMode: ButtonMode.MATERIAL,
@@ -359,7 +359,7 @@ class _AdvancedInputBarState extends State<AdvancedInputBar> {
   void _showAttachmentOptions() {
     showModalBottomSheet(
       context: context,
-      backgroundColor: AppColors.surface,
+      backgroundColor: AppColors.primary,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),

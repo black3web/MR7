@@ -118,8 +118,8 @@ class GlassBubble extends StatelessWidget {
                     AppColors.accent.withOpacity(0.1),
                   ]
                 : [
-                    AppColors.surface.withOpacity(0.4),
-                    AppColors.surface.withOpacity(0.2),
+                    AppColors.primary.withOpacity(0.4),
+                    AppColors.primary.withOpacity(0.2),
                   ],
           ),
           child: Container(

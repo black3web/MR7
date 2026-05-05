@@ -69,9 +69,9 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.primary,
       appBar: AppBar(
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.primary,
         title: const Row(
           children: [
             Icon(Icons.admin_panel_settings, color: Colors.red),
@@ -133,7 +133,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildLiveMonitoringCard() {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -217,7 +217,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildStatCard(String label, int value, IconData icon, Color color) {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
@@ -246,7 +246,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildQuickActionsCard() {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -303,7 +303,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildRecentActivityCard() {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -402,7 +402,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildUserAnalyticsCard() {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -510,7 +510,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildReportCard(Map<String, dynamic> report) {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       margin: const EdgeInsets.only(bottom: 12),
       child: ListTile(
         leading: Icon(Icons.report_problem, color: Colors.red),
@@ -551,7 +551,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildAIStatisticsCard() {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -606,7 +606,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
         final services = snapshot.data ?? {};
 
         return Card(
-          color: AppColors.surface,
+          color: AppColors.primary,
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
@@ -649,7 +649,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
       padding: const EdgeInsets.all(16),
       children: [
         Card(
-          color: AppColors.surface,
+          color: AppColors.primary,
           child: Column(
             children: [
               ListTile(
@@ -705,7 +705,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
 
   Widget _buildAdvancedCard(String title, String subtitle, IconData icon, VoidCallback onTap) {
     return Card(
-      color: AppColors.surface,
+      color: AppColors.primary,
       margin: const EdgeInsets.only(bottom: 12),
       child: ListTile(
         leading: Icon(icon, color: AppColors.accent),
@@ -791,7 +791,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.primary,
         behavior: SnackBarBehavior.floating,
       ),
     );

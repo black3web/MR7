@@ -60,9 +60,9 @@ class _ChatCustomizationScreenState extends State<ChatCustomizationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.primary,
       appBar: AppBar(
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.primary,
         title: Text('تخصيص ${widget.chatName}'),
         actions: [
           IconButton(
@@ -167,7 +167,7 @@ class _ChatCustomizationScreenState extends State<ChatCustomizationScreen> {
         height: 60,
         margin: const EdgeInsets.only(right: 8),
         decoration: BoxDecoration(
-          color: AppColors.surface,
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: AppColors.accent, width: 2),
         ),
@@ -302,7 +302,7 @@ class _ChatCustomizationScreenState extends State<ChatCustomizationScreen> {
         decoration: BoxDecoration(
           color: isSelected
               ? AppColors.accent.withOpacity(0.2)
-              : AppColors.surface,
+              : AppColors.primary,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: isSelected ? AppColors.accent : Colors.white.withOpacity(0.1),
@@ -496,7 +496,7 @@ class _ChatCustomizationScreenState extends State<ChatCustomizationScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.primary,
         behavior: SnackBarBehavior.floating,
       ),
     );
