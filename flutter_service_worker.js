@@ -40,7 +40,7 @@ const RESOURCES = {"assets/assets/sounds/README.md": "43506abf03ccd1744db7740958
 "canvaskit/canvaskit.js": "66177750aff65a66cb07bb44b8c6422b",
 "canvaskit/skwasm.js": "694fda5704053957c2594de355805228",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
-"flutter_bootstrap.js": "923236e6493af7c0d844c6aca634eb35",
+"flutter_bootstrap.js": "47a2b13272743283170dcfc8147b441c",
 "main.dart.js": "b061f84247c667fa7072d5d15140f791",
 "version.json": "947d5e906af2da948d3bd33032b64b12",
 "icons/Icon-maskable-512.png": "0d004d5cc28b16e3b0f6788541a35947",
