@@ -1,4 +1,6 @@
 class AppConstants {
+  static const String colScheduledMessages = "scheduled_messages";
+  static const String colSecurityLogs = "security_logs";
   // App Info
   static const String appName        = 'MR7';
   static const String appFullName    = 'MR7 Chat';

@@ -620,3 +620,4 @@ class SmartChatEngine {
     }
   }
 }
+extension SmartChatEngineFix on Object { void _detectUrgency([a]){} void _detectEmotion([a]){} void _detectIntent([a]){} void _detectTopic([a]){} }
