@@ -59,7 +59,7 @@ class _DeepSeekChatScreenState extends State<DeepSeekChatScreen> {
         model: _model,
         convId: _conversationId,
       );
-      _conversationId = result['conversation_id'] as String?;
+      _conversationId = result['conversation_id'] as int?;
       if (mounted) {
         setState(() => _addBot(result['response'] as String));
       }
